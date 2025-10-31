@@ -1,6 +1,6 @@
 import { Col, Container, Row } from 'react-bootstrap';
 import { PeopleFill, FileEarmarkTextFill, Calendar2CheckFill } from 'react-bootstrap-icons';
-/** The Home page. */
+
 const Home = () => (
   <main>
     <Container id="landing-page" fluid className="py-3">
