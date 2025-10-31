@@ -49,7 +49,7 @@ const EditStuffForm = ({ contact }: { contact: Contact }) => {
                   <div className="invalid-feedback">{errors.firstName?.message}</div>
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label>LastName</Form.Label>
+                  <Form.Label>Last Name</Form.Label>
                   <input
                     type="text"
                     {...register('lastName')}
@@ -59,7 +59,7 @@ const EditStuffForm = ({ contact }: { contact: Contact }) => {
                   <div className="invalid-feedback">{errors.lastName?.message}</div>
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label>address</Form.Label>
+                  <Form.Label>Address</Form.Label>
                   <input
                     type="text"
                     {...register('address')}
@@ -69,7 +69,7 @@ const EditStuffForm = ({ contact }: { contact: Contact }) => {
                   <div className="invalid-feedback">{errors.address?.message}</div>
                 </Form.Group>
                 <Form.Group>
-                  <Form.Label>image</Form.Label>
+                  <Form.Label>Image</Form.Label>
                   <input
                     type="text"
                     {...register('image')}
