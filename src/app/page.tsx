@@ -8,12 +8,10 @@ const Home = () => (
         <Row className="align-middle text-center">
           <Col xs={4}>
             <PeopleFill size={100} />
-            <h1> Multiple Users</h1>
+            <h1>Multiple Users</h1>
             <h5>
-              This address book enables any
-              number of users to register and save
-              their business contacts. You can only see
-              the contacts you have created.
+              This address book enables any number of users to register and
+              save their business contacts. You can only seethe contacts you have created.
             </h5>
           </Col>
           <Col xs={4}>
