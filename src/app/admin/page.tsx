@@ -1,8 +1,8 @@
 import { getServerSession } from 'next-auth';
 import { Col, Container, Row } from 'react-bootstrap';
 import { Contact } from '@prisma/client';
-import { prisma } from '@/lib/prisma';
 import ContactCardAdmin from '@/components/ContactCardAdmin';
+import { prisma } from '@/lib/prisma';
 import { adminProtectedPage } from '@/lib/page-protection';
 import authOptions from '@/lib/authOptions';
 
