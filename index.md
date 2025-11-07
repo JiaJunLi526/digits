@@ -143,6 +143,6 @@ Admins can view and manage data from all users in the system.
 
 The Admin page displays a list of all contacts from every registered user. This provides a system-wide overview for administrative management and oversight.
 
-![]()
+![](https://github.com/jiajunli526/digits/raw/main/doc/admin.png)
 
 Non-admin users cannot access this page, even by manually entering the URL.
