@@ -36,12 +36,13 @@ enum Condition {
   poor
 }
 
-model Stuff {
-  id        Int       @id @default(autoincrement())
-  name      String
-  quantity  Int
-  condition Condition @default(good)
-  owner     String
+model Note {
+    id        Int      @id @default(autoincrement())
+    contactId Int
+    note      String
+    owner     String
+    createdAt DateTime @default(now())
+    Contact   Contact  @relation(fields: [contactId], references: [id])
 }
 
 model Contact {
@@ -51,5 +52,6 @@ model Contact {
   address String
   image String
   description String
+  notes Note[]
   owner String
 }
