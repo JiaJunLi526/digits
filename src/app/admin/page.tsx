@@ -13,7 +13,9 @@ const AdminPage = async () => {
       user: { email: string; id: string; randomKey: string };
     } | null,
   );
-  const contacts: Contact[] = await prisma.contact.findMany({});
+  const contacts: Contact[] = await prisma.contact.findMany({
+    include: { notes: true },
+  });
   return (
     <main>
       <Container id="list" fluid className="py-3">

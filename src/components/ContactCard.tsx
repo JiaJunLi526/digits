@@ -6,7 +6,6 @@ import Link from 'next/link';
 import NoteItem from '@/components/NoteItem';
 import AddNoteForm from './AddNoteForm';
 
-/* Renders a single row in the List Stuff table. See list/page.tsx. */
 const ContactCard = ({ contact, notes }: { contact: Contact; notes: Note[] }) => (
   <Card>
     <Card.Header>

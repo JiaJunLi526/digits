@@ -16,7 +16,7 @@ const onSubmit = async (data: Contact) => {
   });
 };
 
-const EditStuffForm = ({ contact }: { contact: Contact }) => {
+const EditContactForm = ({ contact }: { contact: Contact }) => {
   const {
     register,
     handleSubmit,
@@ -25,7 +25,6 @@ const EditStuffForm = ({ contact }: { contact: Contact }) => {
   } = useForm<Contact>({
     resolver: yupResolver(EditContactSchema),
   });
-  // console.log(stuff);
 
   return (
     <Container className="py-3">
@@ -111,4 +110,4 @@ const EditStuffForm = ({ contact }: { contact: Contact }) => {
   );
 };
 
-export default EditStuffForm;
+export default EditContactForm;

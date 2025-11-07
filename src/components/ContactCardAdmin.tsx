@@ -4,8 +4,7 @@ import { Contact, Note } from '@prisma/client';
 import { Card, Image, ListGroup } from 'react-bootstrap';
 import NoteItem from '@/components/NoteItem';
 
-/* Renders a single row in the List Stuff table. See list/page.tsx. */
-const ContactCard = ({ contact, notes }: { contact: Contact, notes: Note }) => (
+const ContactCard = ({ contact, notes }: { contact: Contact, notes: Note[] }) => (
   <Card className="h-100">
     <Card.Header>
       <Image src={contact.image} width={75} />
